@@ -1,0 +1,364 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    background-color: #191919;
+}
+.logo a{
+    color: #ff305c;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.links a{
+    margin-right: 20px;
+    color: white;
+    font-weight: 600;
+    transition: color 0.2s linear;
+}
+.links a:hover{
+    color: #ff305c;
+}
+#con{
+    margin-left: 30px;
+}
+
+.section1{
+    height: 100vh;
+    background-image: url(imgs/slider-02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    color: white;
+}
+.overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.731);
+}
+.section1 p:nth-child(1){
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.section1 p:nth-child(2){
+    font-size: 4rem;
+    color: #ff305c;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.section1 p:nth-child(3){
+    color: #72726a;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.Portfolio{
+    display: flex;
+    padding: 50px;
+    width: 70%;
+    margin: auto;
+    gap: 40px;
+}
+.doted{
+    width: 100%;
+    height: 1px;
+    border-bottom:1px dashed #6d6d6c;
+    margin-bottom: 20px;
+}
+.Portfolio .info{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.Portfolio h2{
+    position: relative;
+    margin-left: 7px;
+}
+.Portfolio h2::before{
+    content: " ";
+    position: absolute;
+    width: 4px;
+    height: 70%;
+    background-color: #ff305c;
+    left: -7px;
+    top: 4px;
+    display: block;
+}
+.Portfolio b{
+    color: black;
+}
+.Portfolio img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    position: relative;
+}
+.data{
+    display: flex;
+    gap: 60px;
+    line-height: 20px;
+}
+.imgr{
+    position: relative;
+}
+.border{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -10px;
+    left: -10px;
+    border:4px solid #6d6d6c;
+    border-radius: 5px;
+}
+
+.section2{
+    text-align: center;
+    background-color: #e6e6e6;
+    padding: 30px 50px;
+}
+.section2 .con{
+    width: 90%;
+    display: flex;
+    margin: 20px auto;
+}
+.section2 .con .item{
+    display: flex;
+    flex-direction:column ;
+    gap: 15px;
+    padding: 15px;
+    transition: background-color 0.2s linear;
+}
+.section2 .con .item:hover{
+    background-color: white;
+}
+
+.section3{
+    text-align: center;
+    padding: 30px 50px;
+}
+.sect{
+    margin: 15px;
+   display: flex;
+   justify-content: center;
+   color: black;
+   gap: 20px;
+}
+.sect a{
+    color:#6d6d6c;
+    transition: color 0.2s linear;
+}
+.sect a:hover{
+    color: #ff305c;
+}
+.section3 .con{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.section3 .con .it{
+    display: flex;
+    gap: 15px;
+}
+.con img{
+    width: 100%;
+    transition: transform 0.2s linear;
+}
+.con img:hover{
+    transform: scale(1.07);
+}
+
+.section4{
+    background-color: #e6e6e6;
+    padding: 30px 50px;
+    text-align: center;
+}
+.section4 .container{
+    margin: 30px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    line-height: 35px;
+}
+.ic{
+    color: #ff305c;
+}
+
+.section5{
+    text-align: center;
+    padding: 30px 50px;
+}
+.box{
+    background-color: #e6e6e6;
+    display: flex;
+    padding: 20px;
+    gap: 15px;
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+    margin: 20px auto;
+}
+.box span ,p{
+    color: #6d6d6c;
+    font-size: smaller;
+}
+.fa-location-dot{
+    color: #6d6d6c;
+    font-size: smaller;
+}
+.fa-star{
+    color: #f1c30d;
+    font-size: smaller;
+}
+.square {
+    width: 200px;
+    height: 300px;
+    background-color: #ff305c;
+    position: absolute;
+    top: -151px;
+    left: -80px;
+    transform: rotate(45deg);
+}
+.pic img{
+    border-radius: 50%;
+    position: relative;
+    z-index: 3;
+}
+.feed{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section6{
+    text-align: center;
+    background-color: #e6e6e6;
+    padding: 30px 50px;
+}
+.cont{
+    display: flex;
+    margin: 30px 50px;
+    gap: 15px;
+}
+.cont .item{
+    background-color: white;
+    text-align: left;
+}
+.item .text{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.item .im{
+    height: 50%;
+}
+.item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.fa-right-long{
+    color: #ff305c;
+}
+.item a{
+    color: black;
+}
+
+.section7{
+    text-align: center;
+    padding: 30px 50px;
+}
+.inputs{
+    width: 70%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.inputs div{
+    display: flex;
+    gap: 10px;
+}
+.inputs div input{
+    width: 50%;
+}
+.inputs input,.inputs textarea,.inputs button{
+    padding: 10px 5px;
+    outline: none;
+    border: 1px solid #72726ac5;
+    border-radius: 5px;
+}
+.btn{
+    text-align: center;
+    width: 20%;
+    border-radius: 5px;
+    margin: auto;
+    border: none;
+    background-color: #ff305c;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+
+
+h2{
+    margin-bottom: 5px;
+}
+.line .f{
+    height: 0.7px;
+    width: 50px;
+    margin: auto;
+    background-color: #ff305c;
+}
+.line .s{
+    height: 0.7px;
+    width: 100px;
+    margin: 3px auto;
+    background-color: #ff305c;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    color: white;
+    background-color: #191919;
+}
+.icons{
+    /* text-align: center;
+    width: 50%; */
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.icons i{
+    transition: color 0.2s linear;
+    margin-right: 10px;
+}
+.icons i:hover{
+    color: #ff305c;
+}
+.copyr span{
+    color: #ff305c;
+}
